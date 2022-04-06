@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toko_buku/model/book_list.dart';
-import 'detail_screen.dart';
+import 'detail_page.dart';
 import 'package:toko_buku/theme.dart';
 
 class MainPage extends StatefulWidget {
