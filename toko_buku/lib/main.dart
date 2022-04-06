@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:toko_buku/pages/main_page.dart';
 import 'pages/splash_page.dart';
-import 'pages/main_screen.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -12,8 +12,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => SplashPage(),
-        '/main': (context) => MainScreen(),
+        '/': (context) => const SplashPage(),
+        '/main': (context) => const MainPage(),
       },
     );
   }

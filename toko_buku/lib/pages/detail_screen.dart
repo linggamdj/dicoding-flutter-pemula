@@ -99,15 +99,42 @@ class DetailMobilePage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: const EdgeInsets.symmetric(vertical: 16.0),
+              decoration: BoxDecoration(
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(50),
+                ),
+                color: primaryColor,
+              ),
+              margin: EdgeInsets.all(
+                defaultMargin,
+              ),
+              padding: const EdgeInsets.only(
+                top: 10,
+                bottom: 10,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Column(
                     children: <Widget>[
                       Icon(
+                        Icons.star,
+                        color: whiteColor,
+                      ),
+                      const SizedBox(
+                        height: 8.0,
+                      ),
+                      Text(
+                        bookItem.rate,
+                        style: informationTextStyle,
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      Icon(
                         Icons.monetization_on,
-                        color: primaryColor,
+                        color: whiteColor,
                       ),
                       const SizedBox(
                         height: 8.0,
@@ -122,7 +149,7 @@ class DetailMobilePage extends StatelessWidget {
                     children: <Widget>[
                       Icon(
                         Icons.language,
-                        color: primaryColor,
+                        color: whiteColor,
                       ),
                       const SizedBox(
                         height: 8.0,
@@ -137,7 +164,7 @@ class DetailMobilePage extends StatelessWidget {
                     children: <Widget>[
                       Icon(
                         Icons.library_books,
-                        color: primaryColor,
+                        color: whiteColor,
                       ),
                       const SizedBox(
                         height: 8.0,

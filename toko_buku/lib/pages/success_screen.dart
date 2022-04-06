@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toko_buku/pages/main_screen.dart';
+import 'main_page.dart';
 import 'package:toko_buku/theme.dart';
 
 class SuccessPage extends StatelessWidget {
@@ -12,14 +12,14 @@ class SuccessPage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image(
+          const Image(
             image: AssetImage("assets/ic_success.png"),
             height: 260,
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(top: 5.0),
             child: Text(
               "Transaksi Anda Berhasil!",
@@ -30,13 +30,13 @@ class SuccessPage extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           InkWell(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return const MainScreen();
+                return const MainPage();
               }));
             },
             child: Container(
