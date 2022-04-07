@@ -3,14 +3,26 @@ import 'package:toko_buku/model/book_list.dart';
 import 'detail_page.dart';
 import 'package:toko_buku/theme.dart';
 
-class MainPage extends StatefulWidget {
+// class MainPage extends StatefulWidget {
+//   const MainPage({Key? key}) : super(key: key);
+
+//   @override
+//   State<MainPage> createState() => _MainPageState();
+// }
+
+// class _MainPageState extends State<MainPage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       backgroundColor: backgroundColor1,
+//       body: const BookPage(),
+//     );
+//   }
+// }
+
+class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
 
-  @override
-  State<MainPage> createState() => _MainPageState();
-}
-
-class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
